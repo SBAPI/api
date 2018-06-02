@@ -13,5 +13,6 @@ app.get("/", function (req, res){
 	res.send(`{\n	"error": "Unknown api endpoint '/'"\n}`);
 });
 
-app.listen(3000);
-console.log("listening on port 3000");
+var port = Math.floor(Math.random() * (5000 - 1000 + 1)) + 1000;
+app.listen(port);
+console.log("listening on port " + port);
