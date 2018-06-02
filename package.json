@@ -1,0 +1,22 @@
+{
+  "name": "SBAPI",
+  "version": "2.6.0",
+  "description": "API Backend for Seb Bot",
+  "main": "main.js",
+  "author": "SebbyTheGODKid",
+  "license": "MIT",
+  "homepage": "https://github.com/SBAPI",
+  "bugs": {
+    "url": "https://github.com/justdotJS/SimplePresence/issues"
+  },
+  "scripts": {
+    "start": "node main.js"
+  },
+  "dependencies": {
+    "random-puppy": "1.1.0",
+    "request": "2.86.0",
+    "cheerio": "0.22.0",
+    "dblapi.js": "2.0.1",
+    "html-to-json": "0.6.0"
+  }
+}
