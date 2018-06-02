@@ -1,15 +1,13 @@
-const express = require('express');
-const app = this.app = express();
+//const express = require('express');
+//const app = this.app = express();
+const http = require('http');
 var port = Math.floor(Math.random() * (5000 - 1000 + 1)) + 1000;
 var cats = require("cats-js");
 var catapi = new cats();
 
-app.get("/", function (req, res){
-	res.send(`{\n	"error": "Unknown api endpoint '/'"\n}`);
-}).get("/cat", function (req, res){
+http.createServer(function(request, response){
 	catapi.get().then((cat) => {
-		res.send(cat);
+		response.send(cat);
 	});
-}).listen(port, function() {
-	console.log("listening on port " + port);
-});
+}).listen(port);
+console.log("listening on port " + port);
