@@ -9,5 +9,9 @@ app.get("/cat", function (req, res){
 	});
 });
 
+app.get("/", function (req, res){
+	res.send(`{\n	"error": "Unknown api endpoint '/'"\n}`);
+});
+
 app.listen(3000);
 console.log("listening on port 3000");
