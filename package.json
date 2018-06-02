@@ -15,7 +15,7 @@
   "dependencies": {
     "random-puppy": "1.1.0",
     "request": "2.86.0",
-    "cat-api": "1.2.1",
+    "cats-js": "1.0.2",
     "cheerio": "0.22.0",
     "dblapi.js": "2.0.1",
     "html-to-json": "0.6.0",
